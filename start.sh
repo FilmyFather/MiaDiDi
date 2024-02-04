@@ -6,7 +6,7 @@ else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /MiaDiDi 
 fi
-cd /THALAPATHY-FILTER-BOT 
+cd /MiaDiDi
 pip3 install -U -r requirements.txt
 echo "Starting MiaDiDi...."
 python3 bot.py
