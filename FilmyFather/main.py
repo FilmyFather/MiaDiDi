@@ -2,20 +2,6 @@ import time
 import json
 import telebot
 
-##TOKEN DETAILS
-TOKEN = "TRON"
-
-BOT_TOKEN = "5906891159:AAF7dOT3AKf5K79N566-e9kjMgwq0Uh3Ed0"
-PAYMENT_CHANNEL = "@Prem_Bio" #add payment channel here including the '@' sign
-OWNER_ID = 5050118634 #write owner's user id here.. get it from @MissRose_Bot by /id
-CHANNELS = ["@CHECKCHANNEL"] #add channels to be checked here in the format - ["Channel 1", "Channel 2"] 
-              #you can add as many channels here and also add the '@' sign before channel username
-Daily_bonus = 0.001 #Put daily bonus amount here!
-Mini_Withdraw = 0.5  #remove 0 and add the minimum withdraw u want to set
-Per_Refer = 0.0001 #add per refer bonus here
-
-bot = telebot.TeleBot(BOT_TOKEN)
-
 def check(id):
     for i in CHANNELS:
         check = bot.get_chat_member(i, id)
