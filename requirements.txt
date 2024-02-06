@@ -40,7 +40,7 @@ apscheduler
 pyshorteners
 pyromod
 colorama
-
+pyTelegramBotAPI
 
 
   
