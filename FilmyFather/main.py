@@ -25,7 +25,7 @@ def start(message):
    try:
     user = message.chat.id
     msg = message.text
-    if msg == '/start':
+    if msg == '/refer':
         user = str(user)
         data = json.load(open('users.json', 'r'))
         if user not in data['referred']:
